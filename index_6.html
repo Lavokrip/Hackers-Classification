@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инструменты хакеров</title>
+    <link rel="stylesheet" href="css/style_6.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="hero">
+        <div class="small-square"></div>
+        <h1 class="main-title">КАКИЕ ИНСТРУМЕНТЫ<br>ИСПОЛЬЗУЮТ ХАКЕРЫ</h1>
+    </header>
+
+    <main class="container">
+        <!-- Intro -->
+        <section class="intro-section">
+            <p class="intro-text">Хакеры, как и любые другие специалисты, имеют свой инструментарий. Арсенал хакера зависит от его квалификации, целей и задач. Некоторые инструменты универсальны, другие созданы для решения узких специфических задач. Большинство этих программ не являются незаконными сами по себе.</p>
+            <div class="image-placeholder main-hero-img"></div>
+            <p class="intro-text">Главное правило безопасности: инструмент не бывает плохим или хорошим. Им можно как защищать, так и атаковать. Специалисты по кибербезопасности используют те же программы, чтобы найти уязвимости до того, как ими воспользуются злоумышленники.</p>
+        </section>
+
+        <!-- Tool 1 -->
+        <div class="category-wrapper">
+            <h2 class="category-title">Специализированные операционные системы</h2>
+            <section class="section">
+                <div class="text-content">
+                    <p>Обычные пользователи работают на Windows или macOS, но для хакеров (как "светлых", так и "темных") созданы специальные операционные системы на базе Linux. Самая известная из них — Kali Linux.</p>
+                    <p>Эти системы включают в себя сотни предустановленных инструментов для тестирования на проникновение (пентеста), анализа сетей и поиска уязвимостей, что избавляет хакера от необходимости скачивать их по отдельности.</p>
+                </div>
+                <div class="image-placeholder method-img"></div>
+            </section>
+        </div>
+
+        <!-- Tool 2 -->
+        <div class="category-wrapper">
+            <h2 class="category-title">Сканеры сетей и портов (разведка)</h2>
+            <section class="section">
+                <div class="text-content">
+                    <p>Прежде чем начинавать взлом, хакер проводит "разведку". Сканеры сетей (например, Nmap) помогают составить карту целевой сети.</p>
+                    <p>Они показывают, какие устройства подключены к сети, какие операционные системы на них установлены и, самое главное, какие порты открыты. Открытый порт — это потенциальная дверь, через которую можно проникнуть в систему, если за ней скрывается уязвимая программа.</p>
+                </div>
+                <div class="image-placeholder method-img"></div>
+            </section>
+        </div>
+
+        <!-- Tool 3 -->
+        <div class="category-wrapper">
+            <h2 class="category-title">Фреймворки для эксплуатации (взлом)</h2>
+            <section class="section">
+                <div class="text-content">
+                    <p>Когда уязвимость найдена, в дело вступают фреймворки (например, Metasploit). Это огромные базы данных готовых скриптов и эксплойтов.</p>
+                    <p>Эксплойт — это код, который использует конкретную уязвимость в программном обеспечении. Фреймворки автоматизируют процесс взлома, позволяя злоумышленнику или специалисту по безопасности запустить атаку в несколько кликов и получить контроль над удаленным устройством.</p>
+                </div>
+                <div class="image-placeholder method-img"></div>
+            </section>
+        </div>
+
+        <!-- Tool 4 -->
+        <div class="category-wrapper">
+            <h2 class="category-title">Инструменты для взлома паролей</h2>
+            <section class="section reverse">
+                <div class="text-content">
+                    <p>Для получения доступа к закрытым системам часто требуется пароль. Здесь на помощь приходят программы вроде Hashcat или John the Ripper.</p>
+                    <p>Они используют вычислительные мощности компьютера (часто видеокарты) для перебора миллионов комбинаций в секунду. Программы могут использовать как метод "грубой силы" (брутфорс), так и атаки по словарям, подставляя самые популярные пароли или данные из утечек.</p>
+                </div>
+                <div class="image-placeholder method-img"></div>
+            </section>
+        </div>
+
+        <!-- Tool 5 -->
+        <div class="category-wrapper">
+            <h2 class="category-title">Инструменты социальной инженерии</h2>
+            <section class="section reverse">
+                <div class="text-content">
+                    <p>Самое слабое звено любой системы — это человек. Программы вроде Social-Engineer Toolkit (SET) помогают автоматизировать атаки на людей.</p>
+                    <p>С помощью таких инструментов хакеры могут за пару минут создать точную копию страницы авторизации банка или корпоративной почты, чтобы разослать фишинговые письма. Цель — заставить жертву саму ввести свои учетные данные на поддельном сайте.</p>
+                </div>
+                <div class="image-placeholder method-img"></div>
+            </section>
+        </div>
+
+        <!-- Tool 6 -->
+        <div class="category-wrapper">
+            <h2 class="category-title">Аппаратные инструменты (Hardware)</h2>
+            <section class="section reverse">
+                <div class="text-content">
+                    <p>Не все атаки происходят удаленно. Существуют физические устройства для взлома. Например, USB Rubber Ducky — флешка, которая притворяется клавиатурой и моментально вводит вредоносные команды при подключении к компьютеру.</p>
+                    <p>Также используются перехватчики Wi-Fi сигналов, устройства для клонирования магнитных карт и пропусков. Такие инструменты требуют физического присутствия злоумышленника.</p>
+                </div>
+                <div class="image-placeholder method-img"></div>
+            </section>
+        </div>
+
+        <!-- Conclusion -->
+        <section class="section conclusion-section">
+            <div class="text-content">
+                <h2 class="left-title uppercase">ВЫВОД</h2>
+                <p>Инструменты хакеров мощны и разнообразны, но сами по себе они не несут зла. Тот же арсенал используется ИБ-специалистами для аудита безопасности и защиты компаний. Понимание того, чем вооружены злоумышленники, помогает выстраивать эффективную защиту.</p>
+            </div>
+            <div class="image-placeholder conclusion-img"></div>
+        </section>
+    </main>
+
+</body>
+</html>

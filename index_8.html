@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Закон и кибербезопасность</title>
+    <link rel="stylesheet" href="css/style_8.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="hero">
+        <div class="small-square"></div>
+        <h1 class="main-title">ЗАКОН:<br>ЧТО МОЖНО, А ЧТО НЕЛЬЗЯ<br>В КИБЕРБЕЗОПАСНОСТИ</h1>
+    </header>
+
+    <main class="container">
+        
+        <!-- Intro Section -->
+        <section class="section">
+            <div class="text-content">
+                <h2 class="section-title">ТОНКАЯ ГРАНЬ:<br>ГДЕ ЗАКАНЧИВАЕТСЯ ИССЛЕДОВАНИЕ<br>И НАЧИНАЕТСЯ ПРЕСТУПЛЕНИЕ</h2>
+                <p>В мире кибербезопасности грань между легальными действиями и уголовным преступлением часто определяется не только навыками, но и намерением (intent). Вы можете найти уязвимость и обезопасить миллионы пользователей, а можете использовать её для личной наживы. Разница между этими путями — тюремный срок или высокая зарплата в ИТ-компании.</p>
+                <p>Законодательство в сфере компьютерных преступлений (например, статьи 272-274 УК РФ) постоянно совершенствуется, чтобы соответствовать новым вызовам цифрового века.</p>
+            </div>
+            <div class="image-placeholder intro-img"></div>
+        </section>
+
+        <!-- Category: Black Hat -->
+        <div class="category-block">
+            <h2 class="category-header">Что категорически незаконно <span class="zone">(зона Black Hat)</span></h2>
+            <section class="section">
+                <div class="text-content">
+                    <p>Любое несанкционированное проникновение в систему признается незаконным, даже если вы не преследовали цели кражи данных. К тяжким преступлениям относятся:</p>
+                    <ul>
+                        <li><strong>Неправомерный доступ:</strong> Взлом паролей, обход систем защиты, проникновение в корпоративные сети или базы данных.</li>
+                        <li><strong>Создание и распространение вредоносного ПО:</strong> Написание вирусов, троянов, программ-вымогателей для шифрования данных и кражи средств.</li>
+                        <li><strong>DDoS-атаки:</strong> Искусственное переполнение канала трафиком с целью парализовать работу сервиса или сайта.</li>
+                    </ul>
+                </div>
+                <div class="image-placeholder side-img"></div>
+            </section>
+        </div>
+
+        <!-- Category: White Hat -->
+        <div class="category-block">
+            <h2 class="category-header">Что абсолютно легально <span class="zone">(зона White Hat)</span></h2>
+            <section class="section">
+                <div class="text-content">
+                    <p>Хотите развиваться в кибербезопасности и не иметь проблем с законом? Следуйте этим правилам:</p>
+                    <ul>
+                        <li><strong>Bug Bounty:</strong> Участие в официальных программах по поиску уязвимостей. Крупные компании (Google, Яндекс, VK) официально приглашают исследователей искать ошибки и выплачивают за это вознаграждение.</li>
+                        <li><strong>Пентестинг по договору:</strong> Работа в компаниях, специализирующихся на аудите безопасности. В этом случае у вас есть письменное разрешение на "взлом" систем заказчика.</li>
+                    </ul>
+                </div>
+                <div class="image-placeholder side-img"></div>
+            </section>
+        </div>
+
+        <!-- Category: Gray Hat -->
+        <div class="category-block">
+            <h2 class="category-header">Слепая зона <span class="zone">(серые шляпы)</span></h2>
+            <section class="section">
+                <div class="text-content">
+                    <p>Что будет, если вы обнаружили баг на сайте без злого умысла, но не в рамках программы Bug Bounty? Это "серая зона". По закону любой доступ без явного разрешения владельца может быть трактован как нарушение.</p>
+                    <p><strong>Совет:</strong> Если вы нашли уязвимость случайно, никогда не пытайтесь "проверить её до конца" или скачивать данные. Сразу сообщите владельцу ресурса в максимально корректной форме, не требуя выкупа.</p>
+                </div>
+                <div class="image-placeholder side-img"></div>
+            </section>
+        </div>
+
+        <!-- Comparison Table -->
+        <section class="table-section">
+            <h2 class="table-title">Сравнительная таблица:<br><span>ЧТО МОЖНО, А ЧТО НЕЛЬЗЯ</span></h2>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>действие</th>
+                        <th>законность</th>
+                        <th>какой это хакер?</th>
+                        <th>возможные последствия</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Взлом сервера для похищения персональных данных</td>
+                        <td class="illegal">Незаконно</td>
+                        <td>Black Hat</td>
+                        <td>Тюремный срок, огромные штрафы</td>
+                    </tr>
+                    <tr>
+                        <td>Поиск багов на сайте компании в рамках Bug Bounty</td>
+                        <td class="legal">Законно</td>
+                        <td>White Hat</td>
+                        <td>Вознаграждение и оффер на работу</td>
+                    </tr>
+                    <tr>
+                        <td>Случайное обнаружение ошибки и сообщение владельцу</td>
+                        <td class="gray">Серая зона (неоднозначно)</td>
+                        <td>Gray Hat</td>
+                        <td>Зависит от владельца ресурса: благодарность или иск</td>
+                    </tr>
+                    <tr>
+                        <td>Взлом сайта госструктур с целью протеста</td>
+                        <td class="illegal">Незаконно</td>
+                        <td>Red Hat</td>
+                        <td>Уголовное преследование, статус экстремиста</td>
+                    </tr>
+                    <tr>
+                        <td>Взлом своей домашней сети для тренировки</td>
+                        <td class="legal">Законно</td>
+                        <td>Любой (в целях обучения)</td>
+                        <td>Получение опыта без риска</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Final Note -->
+        <footer class="footer-note">
+            <div class="text-content">
+                <h2 class="section-title">ПОМНИТЕ:</h2>
+                <p>Кибербезопасность — это про защиту, этику и соблюдение правил. Настоящий хакер помогает миру развиваться, а не разрушает то, что создано другими.</p>
+            </div>
+            <div class="image-placeholder footer-img"></div>
+        </footer>
+
+    </main>
+
+</body>
+</html>
