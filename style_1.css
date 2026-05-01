@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    padding: 0 80px;
+}
+
+/* Header with grey bg */
+.main-header {
+    background-color: #d9d9d9;
+    height: 750px;
+    padding: 100px 80px;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.small-square {
+    width: 25px;
+    height: 25px;
+    background-color: #a0a0a0;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.hero-title {
+    font-size: 150px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    line-height: 0.9;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+/* Definition */
+.definition-section {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    margin-bottom: 100px;
+}
+
+.def-img { width: 50%; height: 350px; }
+
+.definition-section .text-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Main Thesis */
+.main-thesis {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto 100px auto;
+}
+
+.main-thesis h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    line-height: 1.3;
+}
+
+.thesis-subtext {
+    display: flex;
+    gap: 100px;
+    text-align: left;
+}
+
+/* Role Section */
+.role-section {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.role-img { width: 45%; height: 300px; }
+
+/* About site */
+.about-site {
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.about-site h2 {
+    font-size: 1.8rem;
+    margin-bottom: 50px;
+}
+
+.topics-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Categories */
+.section-underline {
+    margin-bottom: 60px;
+    font-size: 1.6rem;
+}
+
+.category-row {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 40px;
+    align-items: flex-start;
+}
+
+.category-row.reverse { flex-direction: row-reverse; }
+
+.cat-img { width: 35%; height: 220px; }
+.cat-text { flex: 1; }
+.cat-text h3 { margin-bottom: 15px; text-transform: uppercase; }
+
+.summary-note {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 20px;
+}
+
+/* Structure */
+.structure-section {
+    margin: 120px 0;
+}
+
+.structure-section h2 { margin-bottom: 40px; }
+
+.structure-content {
+    display: flex;
+    gap: 60px;
+}
+
+.struct-img { width: 40%; height: 300px; }
+
+.structure-content ul {
+    margin: 20px 0 20px 20px;
+}
+
+/* CTA */
+.cta-section {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.cta-img { width: 350px; height: 200px; }
+.cta-text { font-size: 1.2rem; flex: 1; }
+
+/* Button */
+.button-wrapper {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.start-btn {
+    display: inline-block;
+    padding: 20px 60px;
+    border: 2px solid #000;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: background 0.3s;
+}
+
+.start-btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.image-placeholder {
+    background-color: #d9d9d9;
+}
+
+@media (max-width: 1024px) {
+    .container { padding: 0 30px; }
+    .hero-title { font-size: 50px; }
+    .definition-section, .role-section, .category-row, .structure-content, .cta-section {
+        flex-direction: column !important;
+        align-items: stretch;
+    }
+    .image-placeholder { width: 100% !important; }
+    .thesis-subtext { flex-direction: column; gap: 20px; }
+}
