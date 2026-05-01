@@ -1,0 +1,183 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #000;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    padding: 0 60px;
+}
+
+/* Header */
+.hero {
+    padding: 60px 60px 20px 60px;
+    position: relative;
+}
+
+.small-square {
+    width: 20px;
+    height: 20px;
+    background-color: #a0a0a0;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.main-title {
+    font-size: 110px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+/* Common Section Styles */
+.section {
+    padding: 40px 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 80px;
+}
+
+.section.reverse {
+    flex-direction: row-reverse;
+}
+
+.image-placeholder {
+    background-color: #d9d9d9;
+    width: 40%;
+    height: 400px;
+    flex-shrink: 0;
+}
+
+.text-content {
+    flex: 1;
+    font-size: 1.1rem;
+}
+
+.text-content p {
+    margin-bottom: 20px;
+}
+
+.text-content h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.no-bullets {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.no-bullets li {
+    margin-bottom: 8px;
+}
+
+/* Categories Styles */
+.category-wrapper {
+    margin-top: 60px;
+}
+
+.category-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.category-title .mono {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+.category-title .ru-title {
+    color: #666;
+    font-weight: 400;
+}
+
+/* Table Section */
+.table-section {
+    justify-content: center;
+    padding: 80px 0;
+}
+
+.table-container {
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
+}
+
+.table-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.criteria-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+.criteria-table th, .criteria-table td {
+    padding: 20px 10px;
+    border-bottom: 2px solid #000;
+}
+
+.criteria-table th {
+    font-weight: 700;
+    text-align: left;
+    position: relative;
+    border-bottom: 3px solid #000;
+}
+
+.cube {
+    width: 25px;
+    height: 25px;
+    background-color: #d9d9d9;
+    margin-bottom: 15px;
+}
+
+/* Conclusion Section */
+.conclusion-section {
+    margin-top: 40px;
+    padding-bottom: 100px;
+}
+
+.conclusion-title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #000;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+    .main-title { font-size: 70px; }
+    .section {
+        flex-direction: column !important;
+        align-items: center;
+        gap: 40px;
+    }
+    .image-placeholder { width: 100%; height: 300px; }
+    .table-container { width: 100%; }
+    .criteria-table th, .criteria-table td { padding: 15px 5px; font-size: 1rem; }
+}
