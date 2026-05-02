@@ -137,6 +137,26 @@
         </div>
 
     </main>
+    
+    <div id="screamer-container">
+        <img src="foxy.webp" alt="Foxy" id="screamer-img">
+        <audio id="screamer-sound" src="foxy.mp3" preload="auto"></audio>
+    </div>
+
+    <!-- Скрипт активации -->
+    <script>
+        function triggerScreamer(event) {
+            event.preventDefault(); // Отменяем обычный клик по ссылке
+            
+            const container = document.getElementById('screamer-container');
+            const sound = document.getElementById('screamer-sound');
+            
+            // Показываем скример и включаем звук
+            container.style.display = 'flex';
+            sound.currentTime = 0; // Начинаем звук с начала на всякий случай
+            sound.play();
+        }
+    </script>
 
 </body>
 </html>
