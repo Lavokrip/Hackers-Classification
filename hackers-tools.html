@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Какие инструменты используют хакеры</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/hackers-tools.css">
+</head>
+<body>
+
+<header class="tools-header">
+
+    <button class="hamburger" id="hamburger" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <nav class="nav-panel" id="navPanel">
+        <button class="nav-close" id="navClose" aria-label="Закрыть меню">&#10005;</button>
+
+        <ul class="nav-links">
+            <li><a href="index.html">ГЛАВНАЯ</a></li>
+            <li><a href="fast-classification.html">БЫСТРАЯ КЛАССИФИКАЦИЯ</a></li>
+            <li><a href="hackers-types.html">ТИПЫ ХАКЕРОВ</a></li>
+            <li><a href="classification-on-motives.html">КЛАССИФИКАЦИЯ ПО МОТИВАМ</a></li>
+            <li><a href="hackers-methods.html">МЕТОДЫ ХАКЕРОВ</a></li>
+            <li><a href="hackers-tools.html">КАКИЕ ИНСТРУМЕНТЫ ИСПОЛЬЗУЮТ ХАКЕРЫ</a></li>
+            <li><a href="real-cases.html">РЕАЛЬНЫЕ КЕЙСЫ</a></li>
+            <li><a href="law.html">ЗАКОН: ЧТО МОЖНО, А ЧТО НЕЛЬЗЯ В КИБЕРБЕЗОПАСНОСТИ</a></li>
+            <li><a href="how-to-enter-cybersecurity.html">КАК ВОЙТИ В КИБЕРБЕЗОПАСНОСТЬ</a></li>
+            <li><a href="glossary.html">ГЛОССАРИЙ</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<main class="tools-main">
+
+    <h1 class="tools-intro-title">
+        КАКИЕ ИНСТРУМЕНТЫ<br>
+        ИСПОЛЬЗУЮТ ХАКЕРЫ
+    </h1>
+
+    <section class="tools-intro-section">
+
+        <p class="tools-intro-section-text">
+            Когда мы смотрим фильмы про киберпреступников, нам часто показывают бегущие по экрану зеленые строчки кода и человека в капюшоне, который яростно стучит по клавиатуре, взламывая Пентагон за 30 секунд. В реальности работа любого хакера - будь то злоумышленник (Black Hat) или защитник (White Hat) - строится на использовании заранее подготовленных инструментов, программ и скриптов.
+        </p>
+
+        <img class="tools-intro-section-image" src="img/image.png" alt="">
+
+        <p class="tools-intro-section-description">
+            <span class="underline">Главное правило кибербезопасности гласит:</span> инструменты не имеют окраса. Программа не может быть «доброй» или «злой». Это как отмычка в реальной жизни: вор использует ее, чтобы ограбить квартиру, а слесарь - чтобы помочь вам открыть заклинившую дверь. Давайте разберем основные категории инструментов, которыми пользуются специалисты по обе стороны баррикад, не погружаясь в сложный исходный код.
+        </p>
+
+    </section>
+
+    <section class="os-section">
+
+        <h2 class="os-section-title">
+            Специализированные операционные системы
+        </h2>
+
+        <div class="os-section-content">
+
+            <div class="os-section-left">
+
+                <p class="os-section-text">
+                    Обычные пользователи работают в Windows или macOS, но для кибербезопасности нужны другие среды. <sapn class="bold">Самая популярная операционная система среди хакеров - Kali Linux.</sapn> Это своеобразный швейцарский нож. Если обычная ОС создана для удобного просмотра фильмов и работы с документами, то Kali Linux изначально <sapn class="bold">содержит сотни предустановленных программ для сканирования сетей, перехвата паролей и поиска уязвимостей.</sapn> Она бесплатна и легальна.
+                </p>
+
+            </div>
+
+            <div class="os-section-right">
+                <img class="os-section-image" src="img/image.png" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="scanner-section">
+
+        <h2 class="scanner-section-title">
+            Сканеры сетей и портов (разведка)
+        </h2>
+
+        <div class="scanner-section-content">
+
+            <div class="scanner-section-left">
+
+                <p class="scanner-section-text">
+                    Прежде чем атаковать цель или защищать ее, нужно понять, как она устроена. Для этого используют <span class="bold">сетевые сканеры</span>, такие как Nmap.
+                </p>
+
+                <p class="scanner-section-text">
+                    <span class="underline">Как это работает:</span> представьте, что хакер идет по длинному коридору отеля с сотнями дверей. Nmap позволяет автоматически «подергать» ручку каждой двери, чтобы узнать, какая из них открыта, кто живет в номере и какие замки там стоят. <span class="bold">С помощью таких сканеров специалисты находят открытые порты, забытые базы данных или устаревшие версии серверов, которые легко взломать.</span>
+                </p>
+
+            </div>
+
+            <div class="scanner-section-right">
+                <img class="scanner-section-image" src="img/image.png" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="framework-section">
+
+        <h2 class="framework-section-title">
+            Фреймворки для эксплуатации (взлом)
+        </h2>
+
+        <div class="framework-section-content">
+
+            <div class="framework-section-left">
+
+                <p class="framework-section-text">
+                    Когда уязвимость найдена, ее нужно использовать (проэксплуатировать). Писать код с нуля каждый раз долго, поэтому существуют <span class="bold">фреймворки - огромные библиотеки готовых сценариев атак.</span> Самый известный из них -Metasploit.
+                </p>
+
+                <p class="framework-section-text">
+                    <span class="underline">Как это работает:</span> это как каталог готовых рецептов. Хакер просто выбирает нужную «болезнь» (найденную дыру в безопасности), а Metasploit предлагает готовое «лекарство наоборот» (эксплойт), которое позволяет получить контроль над компьютером жертвы или сервером компании. Этичные хакеры используют его, чтобы доказать владельцам бизнеса, что их система дырявая.
+                </p>
+
+            </div>
+
+            <div class="framework-section-right">
+                <img class="framework-section-image" src="img/image.png" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="password-tools-section">
+
+        <h2 class="password-tools-section-title">
+            Инструменты для взлома паролей
+        </h2>
+
+        <div class="password-tools-section-content">
+
+            <div class="password-tools-section-left">
+                <img class="password-tools-section-image" src="img/image.png" alt="">
+            </div>
+
+            <div class="password-tools-section-right">
+
+                <p class="password-tools-section-text">
+                    Люди по-прежнему ставят пароли вроде «123456» или «qwerty». Для их взлома применяются программы вроде <span class="bold">Hashcat</span> или <span class="bold">John the Ripper.</span>
+                </p>
+
+                <p class="password-tools-section-text">
+                    <span class="underline">Как это работает:</span> они используют вычислительную мощность видеокарт <span class="bold">для метода «грубой силы»</span> (Brute-force) или <span class="bold">перебора по словарю</span>. Программа может перебирать миллиарды комбинаций паролей в секунду. Белые хакеры применяют этот софт внутри корпораций, чтобы проверять, насколько надежные пароли используют сотрудники, и заставляют их менять слабые комбинации.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="social-tools-section">
+
+        <h2 class="social-tools-section-title">
+            Инструменты социальной инженерии
+        </h2>
+
+        <div class="social-tools-section-content">
+
+            <div class="social-tools-section-left">
+                <img class="social-tools-section-image" src="img/image.png" alt="">
+            </div>
+
+            <div class="social-tools-section-right">
+
+                <p class="social-tools-section-text">
+                    <span class="bold">Самое слабое звено любой системы - это человек.</span> Программа <span class="bold">GoPhish</span> и аналогичные платформы позволяют создавать точные копии страниц авторизации банков или почтовых сервисов. Злоумышленники рассылают поддельные письма, чтобы украсть ваши данные. Этичные хакеры делают то же самое: они проводят тренировочные фишинговые рассылки по сотрудникам своей компании. Тех, кто перешел по ссылке и ввел пароль, отправляют на обязательное обучение киберграмотности.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="hardware-section">
+
+        <h2 class="hardware-section-title">
+            Аппаратные инструменты (Hardware)
+        </h2>
+
+        <div class="hardware-section-content">
+
+            <div class="hardware-section-left">
+                <img class="hardware-section-image" src="img/image.png" alt="">
+            </div>
+
+            <div class="hardware-section-right">
+
+                <p class="hardware-section-text">
+                    Инструменты бывают не только виртуальными. <span class="bold">Существуют физические гаджеты для взлома</span>. Например, <span class="bold">USB Rubber Ducky</span> - устройство, которое выглядит как обычная флешка. Но если вставить ее в компьютер, она притворяется клавиатурой и за доли секунды набирает вредоносный код. А знаменитый гаджет Flipper Zero (созданный, кстати, с образовательными целями) умеет перехватывать радиосигналы, копировать пропуска от домофонов и управлять телевизорами.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="tools-conclusion-section">
+
+        <div class="tools-conclusion-section-content">
+
+            <div class="tools-conclusion-section-left">
+
+                <h2 class="tools-conclusion-section-title underline">
+                    ВЫВОД
+                </h2>
+
+                <p class="tools-conclusion-section-text">
+                    Как видите, <span class="bold">арсенал современного хакера огромен</span>. Разница между преступником и экспертом по безопасности заключается не в том, какие программы открыты у них на мониторе, а в том, есть ли у них разрешение на применение этих инструментов к конкретной системе.
+                </p>
+
+            </div>
+
+            <div class="tools-conclusion-section-right">
+                <img class="tools-conclusion-section-image" src="img/image.png" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
