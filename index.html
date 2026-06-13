@@ -1,162 +1,292 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Классификация хакеров</title>
-    <link rel="stylesheet" href="css/style_1.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Классификация хакеров</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Шапка с серым фоном -->
-    <header class="main-header">
-        <div class="small-square">
-            <nav>
-                <ul class="navigation-list">
-                    <li class="navigation-item"><a href="index.html">ГЛАВНАЯ</a></li>
-                    <li class="navigation-item"><a href="index_2.html">БЫСТРАЯ КЛАССИФИКАЦИЯ</a></li>
-                    <li class="navigation-item"><a href="index_3.html">ТИПЫ ХАКЕРОВ</a></li>
-                    <li class="navigation-item"><a href="index_4.html">КЛАССИФИКАЦИЯ ПО МОТИВАМ</a></li>
-                    <li class="navigation-item"><a href="index_5.html">МЕТОДЫ ХАКЕРОВ</a></li>
-                    <li class="navigation-item"><a href="index_6.html">ИНСТРУМЕНТЫ ХАКЕРОВ</a></li>
-                    <li class="navigation-item"><a href="index_7.html">РЕАЛЬНЫЕ КЕЙСЫ</a></li>
-                    <li class="navigation-item"><a href="index_8.html">ЗАКОН</a></li>
-                    <li class="navigation-item"><a href="index_9.html">КАК ВОЙТИ В КИБЕРБЕЗОПАСНОСТЬ</a></li>
-                    <li class="navigation-item"><a href="index_10.html">ГЛОССАРИЙ</a></li>
-                </ul>
-            </nav>
+  <header class="main-header">
+    <div class="main-header-background">
+      <button class="hamburger" id="hamburger" aria-label="Открыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
+      </button>
+
+      <!-- ===== NAV OVERLAY ===== -->
+      <div class="nav-overlay" id="navOverlay"></div>
+
+      <!-- ===== NAVIGATION PANEL ===== -->
+      <nav class="nav-panel" id="navPanel">
+        <button class="nav-close" id="navClose" aria-label="Закрыть меню">&#10005;</button>
+        <ul class="nav-links">
+          <li><a href="index.html">ГЛАВНАЯ</a></li>
+          <li><a href="fast-classification.html">БЫСТРАЯ КЛАССИФИКАЦИЯ</a></li>
+          <li><a href="hackers-types.html">ТИПЫ ХАКЕРОВ</a></li>
+          <li><a href="classification-on-motives.html">КЛАССИФИКАЦИЯ ПО МОТИВАМ</a></li>
+          <li><a href="hackers-methods.html">МЕТОДЫ ХАКЕРОВ</a></li>
+          <li><a href="hackers-tools.html">КАКИЕ ИНСТРУМЕНТЫ ИСПОЛЬЗУЮТ ХАКЕРЫ</a></li>
+          <li><a href="real-cases.html">РЕАЛЬНЫЕ КЕЙСЫ</a></li>
+          <li><a href="law.html">ЗАКОН: ЧТО МОЖНО, А ЧТО НЕЛЬЗЯ В КИБЕРБЕЗОПАСНОСТИ</a></li>
+          <li><a href="how-to-enter-cybersecurity.html">КАК ВОЙТИ В КИБЕРБЕЗОПАСНОСТЬ</a></li>
+          <li><a href="glossary.html">ГЛОССАРИЙ</a></li>
+        </ul>
+      </nav>
+
+      <div class="main-header-content">
+        <h1 class="main-header-title">
+          КЛАССИФИКАЦИЯ<br>
+          ХАКЕРОВ
+        </h1>
+
+        <div class="main-header-arrow">
+          ↓
         </div>
-        <h1 class="hero-title">КЛАССИФИКАЦИЯ<br>ХАКЕРОВ</h1>
-    </header>
-
-    <main class="container">
-        
-        <!-- Определение -->
-        <section class="definition-section">
-            <div class="image-placeholder def-img"></div>
-            <div class="text-content">
-                <h3>ХАКЕРЫ</h3>
-                <p>Это люди, обладающие глубокими знаниями в области информационных систем. Они умеют понимать, как устроены сложные механизмы, находят в них слабые места и используют эти знания на практике. Часто этот термин ассоциируется с преступностью, но на самом деле хакерство намного глубже и многограннее, чем кажется на первый взгляд.</p>
-            </div>
-        </section>
-
-        <!-- Главный тезис -->
-        <section class="main-thesis">
-            <h2>На самом деле хакер — это не обязательно злоумышленник. Всё зависит от того, какую цель преследует человек</h2>
-            <div class="thesis-subtext">
-                <p>Одни взламывают ради наживы, чтобы украсть персональные данные или деньги.</p>
-                <p>Другие — чтобы помочь компаниям стать более защищенными.</p>
-            </div>
-        </section>
-
-        <!-- Роль хакеров -->
-        <section class="role-section">
-            <div class="text-content">
-                <p>В современном мире хакеры играют важную роль</p>
-                <p>С одной стороны, они могут <strong>создавать угрозы</strong>, а с другой — <strong>помогают находить слабые места в защите и предотвращать реальные атаки.</strong></p>
-                <p>Поэтому важно понимать, кто они такие и чем отличаются друг от друга.</p>
-            </div>
-            <div class="image-placeholder role-img"></div>
-        </section>
-
-        <!-- О сайте -->
-        <section class="about-site">
-            <h2>Этот сайт создан, чтобы объяснить тему максимально просто и понятно.</h2>
-            <div class="topics-grid">
-                <div>— Поймете, кто такие хакеры</div>
-                <div>— Изучите юридические аспекты ИБ</div>
-                <div>— Узнаете, как войти в профессию</div>
-                <div>— Познакомитесь с инструментами защиты</div>
-                <div>— Разберетесь в категориях шляп</div>
-                <div>— Изучите основной глоссарий</div>
-            </div>
-        </section>
-
-        <!-- Категории -->
-        <section class="categories-section">
-            <h2 class="section-underline">Существует <u>три основные категории хакеров</u>, которые различаются по своим целям и методам:</h2>
-            
-            <div class="category-row">
-                <div class="cat-text">
-                    <h3>[ White Hat (белые шляпы) ]</h3>
-                    <p>Это специалисты по кибербезопасности. Они работают легально, находят уязвимости в системах защиты с согласия владельцев, чтобы помочь их исправить. Их основная цель — безопасность и защита информационного пространства.</p>
-                </div>
-                <div class="image-placeholder cat-img"></div>
-            </div>
-
-            <div class="category-row reverse">
-                <div class="cat-text">
-                    <h3>[ Grey Hat (серые шляпы) ]</h3>
-                    <p>Находятся посередине между законом и хакерством. Они могут действовать без разрешения владельца, но без злого умысла. Например, могут найти баг и сообщить о нем компании, но иногда требуют за это вознаграждение или делают информацию публичной.</p>
-                </div>
-                <div class="image-placeholder cat-img"></div>
-            </div>
-
-            <div class="category-row">
-                <div class="cat-text">
-                    <h3>[ Black Hat (черные шляпы) ]</h3>
-                    <p>Это хакеры-преступники. Они взламывают системы ради личной выгоды, шпионажа или мести. Их действия незаконны и наносят серьезный вред частным лицам, компаниям и целым государствам.</p>
-                </div>
-                <div class="image-placeholder cat-img"></div>
-            </div>
-            
-            <p class="summary-note">Главное различие между этими типами — в легальности действий и намерениях хакера.</p>
-        </section>
-
-        <!-- Структура сайта -->
-        <section class="structure-section">
-            <h2>Как устроен этот сайт</h2>
-            <div class="structure-content">
-                <div class="text-content">
-                    <p>Этот сайт создан для того, чтобы разложить тему информационной безопасности по полочкам. Вся информация разделена на логические разделы:</p>
-                    <ul>
-                        <li>Классификация (кто есть кто)</li>
-                        <li>Юридическая сторона и закон</li>
-                        <li>Карта входа</li>
-                        <li>Словарь терминов</li>
-                    </ul>
-                    <p>Каждый раздел — это новый уровень глубины в тему кибербезопасности.</p>
-                </div>
-                <div class="image-placeholder struct-img"></div>
-            </div>
-        </section>
-
-        <!-- Призыв к действию -->
-        <section class="cta-section">
-            <div class="image-placeholder cta-img"></div>
-            <div class="cta-text">
-                <p>Сегодня почти вся жизнь связана с интернетом: общение, учеба, покупки и хранение личных данных. <u><strong>Понимание того, как действуют хакеры, помогает лучше защитить себя.</strong></u></p>
-            </div>
-        </section>
-
-        <div class="button-wrapper">
-            <a href="#" class="start-btn" onclick="triggerScreamer(event)">НАЧАТЬ ИЗУЧЕНИЕ</a>
-        </div>
-
-    </main>
-    
-    <div id="screamer-container">
-        <img src="img/foxy.webp" alt="Foxy" id="screamer-img">
-        <audio id="screamer-sound" src="img/foxy.mp3" preload="auto"></audio>
+      </div>
     </div>
+  </header>
 
-    <!-- Скрипт активации -->
-    <!-- <script>
-        function triggerScreamer(event) {
-            event.preventDefault(); // Отменяем обычный клик по ссылке
-            
-            const container = document.getElementById('screamer-container');
-            const sound = document.getElementById('screamer-sound');
-            
-            // Показываем скример и включаем звук
-            container.style.display = 'flex';
-            sound.currentTime = 0; // Начинаем звук с начала на всякий случай
-            sound.play();
-        }
-    </script> -->
+  <main class="main-content">
 
+    <section class="hackers-section">
+      <div class="hackers-section-container">
+
+        <div class="hackers-section-top">
+          <div class="hackers-section-image-block">
+            <img class="hackers-section-image" src="img/hacker.jpg" alt="Хакер">
+          </div>
+
+          <div class="hackers-section-text-block">
+            <h2 class="hackers-section-title">
+              ХАКЕРЫ
+            </h2>
+
+            <p class="hackers-section-description">
+              - это люди, которые хорошо разбираются в компьютерах, программах и сетях. Они умеют понимать, как устроены цифровые системы, находить в них слабые места и использовать эти знания на практике. Часто слово «хакер» воспринимается негативно, потому что его связывают с преступлениями и взломами. Однако это не совсем правильно.
+            </p>
+          </div>
+        </div>
+
+        <div class="hackers-section-middle">
+          <p class="hackers-section-middle-text">
+            На самом деле хакер - это не обязательно злоумышленник. Всё зависит от того, какую цель преследует человек
+          </p>
+        </div>
+
+        <div class="hackers-section-bottom">
+          <p class="hackers-section-bottom-text">
+            Одни используют свои навыки, чтобы защищать системы и помогать компаниям
+          </p>
+
+          <p class="hackers-section-bottom-text">
+            Другие - чтобы получать выгоду незаконным способом.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="importance-section">
+      <div class="importance-section-container">
+
+        <h2 class="importance-section-title">
+          В современном мире хакеры играют важную роль
+        </h2>
+
+        <div class="importance-section-content">
+
+          <div class="importance-section-left">
+            <p class="importance-section-left-text">
+              С одной стороны, они могут создавать угрозы, а с другой - помогают находить слабые места в защите и предотвращать реальные атаки. Поэтому важно понимать, кто они такие и чем отличаются друг от друга.
+            </p>
+          </div>
+
+          <div class="importance-section-right">
+            <img class="importance-section-image" src="img/good-bad.jpg" alt="Хакеры">
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="about-site-section">
+      <div class="about-site-section-container">
+
+        <h2 class="about-site-section-title">
+          Этот сайт создан, чтобы объяснить тему максимально просто и понятно.
+        </h2>
+
+        <p class="about-site-section-down-title">
+          Здесь ты узнаешь
+        </p>
+        
+        <div class="about-site-section-content">
+
+          <ul class="about-site-section-list">
+            <li class="about-site-section-item">Кто такие хакеры</li>
+            <li class="about-site-section-item">Какие бывают типы</li>
+            <li class="about-site-section-item">Чем они отличаются друг от друга</li>
+          </ul>
+
+          <ul class="about-site-section-list">
+            <li class="about-site-section-item">Какие методы они используют</li>
+            <li class="about-site-section-item">Почему люди выбирают именно этот путь</li>
+            <li class="about-site-section-item">Основные типы хакеров</li>
+          </ul>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="types-section">
+      <div class="types-section-container">
+
+        <h2 class="types-section-title">
+          Существует <span class="underline">три основные категории хакеров</span>,<br> которые различаются по своим целям и методам:
+        </h2>
+
+        <div class="types-section-white">
+
+          <div class="types-section-white-left">
+            <h3 class="types-section-white-title">
+              [ White hat (белые хакеры) ]
+            </h3>
+
+            <p class="types-section-white-text">
+              Это специалисты по кибербезопасности. Они работают легально и с разрешения владельцев систем. Их задача - находить уязвимости и помогать их устранять. Такие хакеры часто работают в компаниях или участвуют в программах по поиску ошибок.
+            </p>
+          </div>
+
+          <div class="types-section-white-right">
+            <img class="types-section-white-image" src="img/white-hacker.jpg" alt="White hacker">
+          </div>
+
+        </div>
+
+        <div class="types-section-grey">
+
+          <div class="types-section-grey-left">
+            <img class="types-section-grey-image" src="img/gray-hacker.jpg" alt="Grey hacker">
+          </div>
+
+          <div class="types-section-grey-right">
+            <h3 class="types-section-grey-title">
+              [ Grey hat (серые хакеры) ]
+            </h3>
+
+            <p class="types-section-grey-text">
+              Занимают промежуточное положение. Они могут искать уязвимости без разрешения, что уже нарушает правила, но не всегда используют это во вред. Иногда они сообщают о найденных проблемах, а иногда действуют просто из интереса.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="types-section-black">
+
+          <div class="types-section-black-left">
+            <h3 class="types-section-black-title">
+              [ Black hat (чёрные хакеры) ]
+            </h3>
+
+            <p class="types-section-black-text">
+              Это злоумышленники. Они используют свои знания для незаконных действий: взлома аккаунтов, кражи данных, распространения вредоносных программ и других атак.
+            </p>
+          </div>
+
+          <div class="types-section-black-right">
+            <img class="types-section-black-image" src="img/image.png" alt="Black hacker">
+          </div>
+
+        </div>
+
+        <div class="types-section-footer">
+          <p class="types-section-footer-text">
+            <span class="underline">Главное различие</span> между этими типами - это намерения и законность действий, а не уровень навыков.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="structure-section">
+      <div class="structure-section-container">
+
+        <h2 class="structure-section-title">
+          Как устроен этот сайт
+        </h2>
+
+        <div class="structure-section-content">
+
+          <div class="structure-section-left">
+
+            <p class="structure-section-left-text">
+              Этот сайт создан для того, чтобы объяснить тему хакеров простым и понятным языком. Здесь нет сложных терминов или перегруженной теории. Вся информация разделена на логические разделы:
+            </p>
+            <ul class="structure-section-left-list">
+              <li class="structure-section-left-item">базовая классификация</li>
+              <li class="structure-section-left-item">подробные типы хакеров</li>
+              <li class="structure-section-left-item">мотивация</li>
+              <li class="structure-section-left-item">методы работы</li>
+            </ul>
+
+          </div>
+
+          <div class="structure-section-right">
+            <img class="structure-section-image" src="img/image.png" alt="Сайт">
+          </div>
+
+        </div>
+
+        <p class="structure-section-description">
+          Каждый раздел помогает глубже понять тему без сложных терминов.
+        </p>
+
+      </div>
+    </section>
+
+    <section class="final-section">
+      <div class="final-section-container">
+
+        <div class="final-section-content">
+
+          <div class="final-section-left">
+            <img class="final-section-image" src="img/image.png" alt="Безопасность">
+          </div>
+
+          <div class="final-section-right">
+
+            <p class="final-section-right-text">
+              Сегодня почти вся жизнь связана с интернетом: общение, учёба, покупки и хранение личных данных.
+            </p>
+
+            <p class="final-section-right-text underline">
+              Понимание того, как действуют хакеры, помогает лучше защищать себя.
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="final-section-button-block">
+          <a class="final-section-button" href="#">
+            НАЧАТЬ ИЗУЧЕНИЕ
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
