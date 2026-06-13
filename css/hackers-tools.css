@@ -1,0 +1,426 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    line-height: 1.15;
+    color: #ffffff;
+    background-color: #070B12;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.bold {
+    font-weight: 500;
+    font-style: Medium;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.underline {
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0%;
+    text-decoration-skip-ink: auto;
+}
+
+/* hamburger */
+
+.hamburger {
+    position: fixed;
+    top: 33px;
+    left: 30px;
+    z-index: 1100;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+    line-height: 0;
+}
+
+.hamburger span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    transition: opacity 0.2s ease;
+}
+
+.hamburger.is-hidden {
+    pointer-events: none;
+    opacity: 0;
+}
+
+/* nav overlay */
+
+.nav-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1050;
+    background: transparent;
+    pointer-events: none;
+    transition: background 0.35s ease;
+}
+
+.nav-overlay.is-active {
+    pointer-events: all;
+}
+
+/* navigation panel */
+
+.nav-panel {
+    position: fixed;
+    top: 0;
+    left: -340px;
+    width: 300px;
+    height: 100vh;
+    background-color: #ffffff;
+    z-index: 1060;
+    display: flex;
+    flex-direction: column;
+    padding: 28px 30px 40px;
+    overflow-y: auto;
+    transition: left 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-panel.is-open {
+    left: 0;
+}
+
+.nav-close {
+    align-self: flex-start;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #000000;
+    line-height: 1;
+    padding: 0;
+    margin-bottom: 46px;
+    font-weight: 400;
+    transition: color 0.2s;
+}
+
+.nav-close:hover {
+    color: #5A5A5A;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    margin-bottom: 22px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -6%;
+    text-transform: uppercase;
+    line-height: 1.4;
+    display: block;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #5A5A5A;
+}
+
+.nav-links a:active {
+    color: #5A5A5A;
+}
+
+/* tools-intro-section */
+
+.tools-intro-title {
+    max-width: 970px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    font-weight: 500;
+    font-size: 96px;
+    line-height: 100%;
+    letter-spacing: -6%;
+}
+
+.tools-intro-section {
+    margin-bottom: 150px;
+}
+
+.tools-intro-section-text {
+    max-width: 925px;
+}
+
+.tools-intro-section-description {
+    max-width: 925px;
+}
+
+.tools-intro-section-image {
+    height: 500px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+/* os-section */
+
+.os-section {
+    margin-bottom: 120px;
+}
+
+.os-section-title {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: -6%;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.os-section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.os-section-left {
+    width: 714px;
+}
+
+.os-section-text {
+    margin: 0;
+}
+
+.os-section-image {
+    width: 505px;
+    height: 350px;
+}
+
+/* scanner-section */
+
+.scanner-section {
+    margin-bottom: 120px;
+}
+
+.scanner-section-title {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: -6%;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.scanner-section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.scanner-section-left {
+    width: 714px;
+}
+
+.scanner-section-text {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.scanner-section-image {
+    width: 505px;
+    height: 350px;
+}
+
+/* framework-section */
+
+.framework-section {
+    margin-bottom: 120px;
+}
+
+.framework-section-title {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: -6%;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.framework-section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.framework-section-left {
+    width: 714px;
+}
+
+.framework-section-text {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.framework-section-image {
+    width: 505px;
+    height: 350px;
+}
+
+/* password-tools-section */
+
+.password-tools-section {
+    margin-bottom: 120px;
+}
+
+.password-tools-section-title {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: -6%;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.password-tools-section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.password-tools-section-right {
+    width: 714px;
+}
+
+.password-tools-section-text {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.password-tools-section-image {
+    width: 505px;
+    height: 350px;
+}
+
+/* social-tools-section */
+
+.social-tools-section {
+    margin-bottom: 120px;
+}
+
+.social-tools-section-title {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: -6%;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.social-tools-section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.social-tools-section-right {
+    width: 714px;
+}
+
+.social-tools-section-text {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.social-tools-section-image {
+    width: 505px;
+    height: 350px;
+}
+
+/* hardware-section */
+
+.hardware-section {
+    margin-bottom: 120px;
+}
+
+.hardware-section-title {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: -6%;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.hardware-section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.hardware-section-right {
+    width: 714px;
+}
+
+.hardware-section-text {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.hardware-section-image {
+    width: 505px;
+    height: 350px;
+}
+
+/* tools-conclusion-section */
+
+.tools-conclusion-section {
+    margin-bottom: 200px;
+}
+
+.tools-conclusion-section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.tools-conclusion-section-left {
+    width: 610px;
+}
+
+.tools-conclusion-section-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.tools-conclusion-section-image {
+    width: 610px;
+    height: 400px;
+}

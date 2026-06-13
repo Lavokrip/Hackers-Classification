@@ -1,0 +1,606 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    line-height: 1.15;
+    color: #ffffff;
+    background-color: #070B12;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.bold {
+    font-weight: 500;
+    font-style: Medium;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.underline {
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0%;
+    text-decoration-skip-ink: auto;
+}
+
+/* hamburger */
+
+.hamburger {
+    position: fixed;
+    top: 33px;
+    left: 30px;
+    z-index: 1100;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+    line-height: 0;
+}
+
+.hamburger span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    transition: opacity 0.2s ease;
+}
+
+.hamburger.is-hidden {
+    pointer-events: none;
+    opacity: 0;
+}
+
+/* nav overlay */
+
+.nav-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1050;
+    background: transparent;
+    pointer-events: none;
+    transition: background 0.35s ease;
+}
+
+.nav-overlay.is-active {
+    pointer-events: all;
+}
+
+/* navigation panel */
+
+.nav-panel {
+    position: fixed;
+    top: 0;
+    left: -340px;
+    width: 300px;
+    height: 100vh;
+    background-color: #ffffff;
+    z-index: 1060;
+    display: flex;
+    flex-direction: column;
+    padding: 28px 30px 40px;
+    overflow-y: auto;
+    transition: left 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-panel.is-open {
+    left: 0;
+}
+
+.nav-close {
+    align-self: flex-start;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #000000;
+    line-height: 1;
+    padding: 0;
+    margin-bottom: 46px;
+    font-weight: 400;
+    transition: color 0.2s;
+}
+
+.nav-close:hover {
+    color: #5A5A5A;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    margin-bottom: 22px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -6%;
+    text-transform: uppercase;
+    line-height: 1.4;
+    display: block;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #5A5A5A;
+}
+
+.nav-links a:active {
+    color: #5A5A5A;
+}
+
+/* methods-intro-section */
+
+.methods-intro-title {
+    margin: 0;
+    margin-top: 120px;
+    font-size: 96px;
+    font-weight: 500;
+}
+
+.methods-intro-section {
+    margin-top: 120px;
+    margin-bottom: 150px;
+}
+
+.methods-intro-section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.methods-intro-section-left {
+    width: 715px;
+}
+
+.methods-intro-section-title {
+    width: 420px;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    letter-spacing: 0%;
+}
+
+.methods-intro-section-text {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.methods-intro-section-description {
+    margin: 0;
+    padding: 0;
+}
+
+.methods-intro-section-image {
+    width: 505px;
+    height: 270px;
+}
+
+/* phishing-section */
+
+.phishing-section {
+    margin-bottom: 120px;
+}
+
+.phishing-section-title {
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.phishing-section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.phishing-section-left {
+    width: 715px;
+}
+
+.phishing-section-text {
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.phishing-section-subtitle {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.phishing-section-list {
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    list-style: none;
+}
+
+.phishing-section-item {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.phishing-section-item::before {
+    content: "- ";
+}
+
+.phishing-section-description {
+    margin: 0;
+    width: 925px;
+} 
+
+.phishing-section-image {
+    width: 505px;
+    height: 250px;
+}
+
+/* vulnerability-section */
+
+.vulnerability-section {
+    margin-bottom: 120px;
+}
+
+.vulnerability-section-title {
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.vulnerability-section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px
+}
+
+.vulnerability-section-left {
+    width: 715px;
+}
+
+.vulnerability-section-text {
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.vulnerability-section-subtitle {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.vulnerability-section-list {
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    list-style: none;
+}
+
+.vulnerability-section-item {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.vulnerability-section-item::before {
+    content: "- ";
+}
+
+.vulnerability-section-description {
+    margin: 0;
+    margin-left: 210px;
+    width: 1030px;
+    align-items: end;
+} 
+
+.vulnerability-section-image {
+    width: 505px;
+    height: 250px;
+}
+
+/* malware-section */
+
+.malware-section {
+    margin-bottom: 120px;
+}
+
+.malware-section-title {
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.malware-section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.malware-section-left {
+    width: 715px;
+}
+
+.malware-section-text {
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.malware-section-subtitle {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.malware-section-list {
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    list-style: none;
+}
+
+.malware-section-item {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.malware-section-item::before {
+    content: "- ";
+}
+
+.malware-section-description {
+    margin: 0;
+    width: 925px;
+} 
+
+.malware-section-image {
+    width: 505px;
+    height: 250px;
+}
+
+/* social-section */
+
+.social-section {
+    margin-bottom: 120px;
+}
+
+.social-section-title {
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.social-section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px
+}
+
+.social-section-left {
+    width: 715px;
+}
+
+.social-section-text {
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.social-section-subtitle {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.social-section-list {
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    list-style: none;
+}
+
+.social-section-item {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.social-section-item::before {
+    content: "- ";
+}
+
+.social-section-description {
+    margin: 0;
+    margin-left: 210px;
+    width: 1030px;
+    align-items: end;
+} 
+
+.social-section-image {
+    width: 505px;
+    height: 250px;
+}
+
+/* password-section */
+
+.password-section {
+    margin-bottom: 120px;
+}
+
+.password-section-title {
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.password-section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.password-section-left {
+    width: 715px;
+}
+
+.password-section-text {
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.password-section-subtitle {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.password-section-list {
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    list-style: none;
+}
+
+.password-section-item {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.password-section-item::before {
+    content: "- ";
+}
+
+.password-section-description {
+    margin: 0;
+    width: 925px;
+}
+
+.password-section-description:last-child {
+    margin-top: 10px;
+}
+
+.password-section-image {
+    width: 505px;
+    height: 250px;
+}
+
+/* connection-section */
+
+.connection-section {
+    margin-bottom: 150px;
+}
+
+.connection-section-title {
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.connection-section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.connection-section-left {
+    width: 610px;
+}
+
+.connection-section-text {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.connection-section-description {
+    margin: 0;
+}
+
+.connection-section-image {
+    width: 610px;
+    height: 300px;
+}
+
+/* methods-conclusion-section */
+
+.methods-conclusion-section {
+    padding-bottom: 150px;
+}
+
+.methods-conclusion-section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.methods-conclusion-section-left {
+    width: 610px;
+}
+
+.methods-conclusion-section-title {
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.methods-conclusion-section-image {
+    width: 610px;
+    height: 400px;
+}
+
+/* methods-chart-section */
+
+.methods-chart-section {
+    margin-bottom: 200px;
+}
+
+.methods-chart-section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'JetBrains Mono';
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: -6%;
+
+}
+
+.methods-chart-section-canvas-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
