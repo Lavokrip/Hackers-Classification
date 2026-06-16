@@ -14,6 +14,7 @@ body {
 
 main {
     width: 1240px;
+    max-width: calc(100% - 40px);
     margin: 0 auto;
 }
 
@@ -604,4 +605,162 @@ a {
 .methods-chart-section-canvas-wrapper {
     width: 1200px;
     margin: 0 auto;
+}
+
+/* ========================= */
+/* ADAPTIVE */
+/* ========================= */
+
+@media (max-width: 1280px) {
+
+    .methods-intro-section-image,
+    .phishing-section-image,
+    .vulnerability-section-image,
+    .malware-section-image,
+    .social-section-image,
+    .password-section-image,
+    .connection-section-image,
+    .methods-conclusion-section-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .phishing-section-description,
+    .malware-section-description,
+    .password-section-description,
+    .vulnerability-section-description,
+    .social-section-description {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .methods-chart-section-canvas-wrapper {
+        width: 100%;
+        max-width: 1200px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .methods-intro-title {
+        font-size: 72px;
+    }
+
+    .methods-intro-section-content,
+    .phishing-section-content,
+    .vulnerability-section-content,
+    .malware-section-content,
+    .social-section-content,
+    .password-section-content,
+    .connection-section-content,
+    .methods-conclusion-section-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .methods-intro-section-left,
+    .phishing-section-left,
+    .vulnerability-section-left,
+    .malware-section-left,
+    .social-section-left,
+    .password-section-left,
+    .connection-section-left,
+    .methods-conclusion-section-left {
+        width: 100%;
+    }
+
+    .methods-intro-section-title {
+        width: 100%;
+    }
+
+    .phishing-section,
+    .vulnerability-section,
+    .malware-section,
+    .social-section,
+    .password-section {
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    .methods-intro-title {
+        margin-top: 100px;
+        font-size: 48px;
+        line-height: 1.1;
+    }
+
+    .methods-intro-section {
+        margin-top: 80px;
+        margin-bottom: 100px;
+    }
+
+    .phishing-section-title,
+    .vulnerability-section-title,
+    .malware-section-title,
+    .social-section-title,
+    .password-section-title,
+    .connection-section-title,
+    .methods-chart-section-title {
+        font-size: 28px;
+    }
+
+    .methods-conclusion-section-title {
+        font-size: 28px;
+    }
+
+    .methods-intro-section-title {
+        font-size: 22px;
+    }
+
+    .nav-panel {
+        width: 260px;
+    }
+
+    .methods-chart-section-canvas-wrapper {
+        overflow-x: auto;
+    }
+
+    .methods-chart-section {
+        margin-bottom: 120px;
+    }
+
+    .methods-conclusion-section {
+        padding-bottom: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    main {
+        max-width: calc(100% - 24px);
+    }
+
+    .methods-intro-title {
+        font-size: 36px;
+    }
+
+    .phishing-section-title,
+    .vulnerability-section-title,
+    .malware-section-title,
+    .social-section-title,
+    .password-section-title,
+    .connection-section-title,
+    .methods-chart-section-title,
+    .methods-conclusion-section-title {
+        font-size: 24px;
+    }
+
+    .methods-intro-section-title {
+        font-size: 20px;
+    }
+
+    .hamburger {
+        top: 20px;
+        left: 15px;
+    }
 }
