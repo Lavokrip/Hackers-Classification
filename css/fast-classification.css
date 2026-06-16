@@ -14,6 +14,7 @@ body {
 
 main {
     width: 1240px;
+    max-width: calc(100% - 40px);
     margin: 0 auto;
 }
 
@@ -573,4 +574,138 @@ a {
 .conclusion-section-image {
     width: 610px;
     height: 400px;
+}
+
+/* ========================= */
+/* ADAPTIVE */
+/* ========================= */
+
+@media (max-width: 1280px) {
+
+    .quick-intro-section-image,
+    .white-hat-section-image,
+    .grey-hat-section-image,
+    .black-hat-section-image,
+    .conclusion-section-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .criteria-section-table {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .quick-intro-title {
+        font-size: 72px;
+    }
+
+    .quick-intro-section-content,
+    .white-hat-section-content,
+    .grey-hat-section-content,
+    .black-hat-section-content,
+    .conclusion-section-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .quick-intro-section-left,
+    .white-hat-section-left,
+    .grey-hat-section-right,
+    .black-hat-section-left,
+    .conclusion-section-left {
+        width: 100%;
+    }
+
+    .quick-intro-section-image,
+    .white-hat-section-image,
+    .grey-hat-section-image,
+    .black-hat-section-image,
+    .conclusion-section-image {
+        width: 100%;
+    }
+
+    .white-hat-section,
+    .grey-hat-section,
+    .black-hat-section,
+    .criteria-section,
+    .conclusion-section {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    .quick-intro-title {
+        margin-top: 100px;
+        font-size: 48px;
+        line-height: 1.1;
+    }
+
+    .quick-intro-section {
+        margin-top: 80px;
+    }
+
+    .quick-intro-section-text {
+        font-size: 24px;
+    }
+
+    .white-hat-section-title,
+    .grey-hat-section-title,
+    .black-hat-section-title,
+    .criteria-section-title {
+        font-size: 28px;
+    }
+
+    .conclusion-section-title {
+        font-size: 28px;
+    }
+
+    .nav-panel {
+        width: 260px;
+    }
+
+    .criteria-section-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .conclusion-section {
+        margin-bottom: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    main {
+        max-width: calc(100% - 24px);
+    }
+
+    .quick-intro-title {
+        font-size: 36px;
+    }
+
+    .white-hat-section-title,
+    .grey-hat-section-title,
+    .black-hat-section-title,
+    .criteria-section-title,
+    .conclusion-section-title {
+        font-size: 24px;
+    }
+
+    .quick-intro-section-text {
+        font-size: 20px;
+    }
+
+    .hamburger {
+        left: 15px;
+        top: 20px;
+    }
 }
