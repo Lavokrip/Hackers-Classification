@@ -14,6 +14,7 @@ body {
 
 main {
     width: 1240px;
+    max-width: calc(100% - 40px);
     margin: 0 auto;
 }
 
@@ -358,6 +359,7 @@ a {
 
 .cases-chart-description-section {
     width: 1100px;
+    max-width: 100%;
     margin-bottom: 200px;
     display: flex;
     flex-direction: column;
@@ -408,4 +410,182 @@ a {
 .cases-chart-description-section-consequences {
     width: 820px;
     margin: 0;
+}
+
+/* ========================= */
+/* ADAPTIVE */
+/* ========================= */
+
+@media (max-width: 1280px) {
+
+    .cases-intro-section-left,
+    .cases-second-intro-section-left,
+    .case-one-section-left,
+    .case-two-section-left,
+    .case-three-section-left,
+    .case-four-section-right,
+    .case-five-section-right,
+    .case-six-section-right,
+    .case-seven-section-right,
+    .cases-chart-description-section {
+        width: 100%;
+    }
+
+    .cases-intro-section-image,
+    .cases-second-intro-section-image,
+    .case-one-section-image,
+    .case-two-section-image,
+    .case-three-section-image,
+    .case-four-section-image,
+    .case-five-section-image,
+    .case-six-section-image,
+    .case-seven-section-image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .cases-intro-section-title {
+        font-size: 72px;
+    }
+
+    .cases-intro-section-subtitle,
+    .cases-second-intro-section-title {
+        font-size: 36px;
+    }
+
+    .cases-intro-section-content,
+    .cases-second-intro-section-content,
+    .case-one-section-content,
+    .case-two-section-content,
+    .case-three-section-content,
+    .case-four-section-content,
+    .case-five-section-content,
+    .case-six-section-content,
+    .case-seven-section-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .cases-chart-description-section-titles {
+        justify-content: space-between;
+    }
+
+    .cases-chart-description-section-title:first-child,
+    .cases-chart-description-section-title:nth-child(2) {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    .cases-intro-section {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .cases-intro-section-title {
+        margin-top: 0;
+        margin-bottom: 80px;
+        font-size: 48px;
+        line-height: 1.1;
+    }
+
+    .cases-intro-section-subtitle,
+    .cases-second-intro-section-title {
+        font-size: 28px;
+    }
+
+    .case-one-section-title,
+    .case-two-section-title,
+    .case-three-section-title,
+    .case-four-section-title,
+    .case-five-section-title,
+    .case-six-section-title,
+    .case-seven-section-title,
+    .cases-chart-section-title {
+        font-size: 28px;
+    }
+
+    .cases-chart-section-canvas-wrapper {
+        overflow-x: auto;
+    }
+
+    .cases-chart-description-section {
+        gap: 20px;
+    }
+
+    .cases-chart-description-section-titles {
+        display: none;
+    }
+
+    .cases-chart-description-section-text {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .cases-chart-description-section-type,
+    .cases-chart-description-section-consequences {
+        width: 100%;
+    }
+
+    .cases-chart-description-section-type {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .cases-chart-description-section-text {
+        font-size: 18px;
+    }
+
+    .cases-chart-description-section {
+        margin-bottom: 120px;
+    }
+
+    .nav-panel {
+        width: 260px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    main {
+        max-width: calc(100% - 24px);
+    }
+
+    .cases-intro-section-title {
+        font-size: 36px;
+    }
+
+    .cases-intro-section-subtitle,
+    .cases-second-intro-section-title {
+        font-size: 22px;
+    }
+
+    .case-one-section-title,
+    .case-two-section-title,
+    .case-three-section-title,
+    .case-four-section-title,
+    .case-five-section-title,
+    .case-six-section-title,
+    .case-seven-section-title,
+    .cases-chart-section-title {
+        font-size: 24px;
+    }
+
+    .case {
+        font-size: 24px;
+    }
+
+    .hamburger {
+        top: 20px;
+        left: 15px;
+    }
 }
