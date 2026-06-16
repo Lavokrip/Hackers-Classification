@@ -14,6 +14,7 @@ body {
 
 main {
     width: 1240px;
+    max-width: calc(100% - 40px);
     margin: 0 auto;
 }
 
@@ -440,4 +441,145 @@ a {
 .motives-chart-section-canvas-wrapper {
     width: 700px;
     margin: 0 auto;
+}
+
+/* ========================= */
+/* ADAPTIVE */
+/* ========================= */
+
+@media (max-width: 1280px) {
+
+    .motives-intro-section-img,
+    .money-section-image,
+    .ideas-section-image,
+    .state-section-image,
+    .understanding-section-image,
+    .motives-conclusion-section-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .understanding-section,
+    .motives-conclusion-section {
+        width: 100%;
+    }
+
+    .motives-chart-section-canvas-wrapper {
+        width: 100%;
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .motives-intro-title {
+        font-size: 72px;
+    }
+
+    .money-section-content,
+    .ideas-section-content,
+    .state-section-content,
+    .understanding-section,
+    .motives-conclusion-section {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .money-section-left,
+    .ideas-section-left,
+    .state-section-left,
+    .motives-conclusion-section-right {
+        width: 100%;
+    }
+
+    .money-section-image,
+    .ideas-section-image,
+    .state-section-image,
+    .understanding-section-image,
+    .motives-conclusion-section-image {
+        width: 100%;
+    }
+
+    .motives-intro-section-text {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    .motives-intro-title {
+        margin-top: 100px;
+        margin-bottom: 80px;
+        font-size: 48px;
+        line-height: 1.1;
+    }
+
+    .motives-intro-section {
+        margin-top: 80px;
+        margin-bottom: 100px;
+    }
+
+    .motives-intro-section-text,
+    .money-section-title,
+    .ideas-section-title,
+    .state-section-title,
+    .understanding-section-title,
+    .motives-chart-section-title {
+        font-size: 28px;
+    }
+
+    .money-section,
+    .ideas-section,
+    .state-section,
+    .understanding-section,
+    .motives-conclusion-section {
+        margin-bottom: 80px;
+    }
+
+    .motives-chart-section {
+        margin-bottom: 120px;
+    }
+
+    .nav-panel {
+        width: 260px;
+    }
+
+    .motives-chart-section-canvas-wrapper {
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 480px) {
+
+    main {
+        max-width: calc(100% - 24px);
+    }
+
+    .motives-intro-title {
+        font-size: 36px;
+    }
+
+    .motives-intro-section-text,
+    .money-section-title,
+    .ideas-section-title,
+    .state-section-title,
+    .understanding-section-title,
+    .motives-chart-section-title {
+        font-size: 24px;
+    }
+
+    .hamburger {
+        left: 15px;
+        top: 20px;
+    }
+
+    .money-section-title,
+    .ideas-section-title,
+    .state-section-title {
+        margin-bottom: 30px;
+    }
 }
