@@ -13,6 +13,7 @@ body {
 
 main {
     width: 1240px;
+    max-width: calc(100% - 40px);
     margin: 0 auto;
 }
 
@@ -209,4 +210,100 @@ a {
 
 .glossary-terms-section-item {
     margin-bottom: 40px;
+}
+
+/* ========================= */
+/* ADAPTIVE */
+/* ========================= */
+
+@media (max-width: 1280px) {
+
+    .glossary-intro-section-text {
+        width: 100%;
+    }
+
+    .glossary-intro-section-image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .glossary-intro-title {
+        font-size: 72px;
+    }
+
+    .glossary-intro-subtitle {
+        font-size: 36px;
+    }
+
+    .glossary-intro-section {
+        margin-top: 80px;
+    }
+
+    .glossary-terms-section {
+        margin-top: 100px;
+        margin-bottom: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    .glossary-intro-title {
+        margin-top: 100px;
+        font-size: 48px;
+        line-height: 1.1;
+    }
+
+    .glossary-intro-subtitle {
+        font-size: 28px;
+        margin-bottom: 60px;
+        line-height: 1.2;
+    }
+
+    .glossary-intro-section-text {
+        margin-bottom: 30px;
+    }
+
+    .glossary-intro-section-image {
+        border-radius: 15px;
+    }
+
+    .glossary-terms-section {
+        margin-top: 80px;
+        margin-bottom: 100px;
+    }
+
+    .glossary-terms-section-item {
+        margin-bottom: 30px;
+    }
+
+    .nav-panel {
+        width: 260px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    main {
+        max-width: calc(100% - 24px);
+    }
+
+    .glossary-intro-title {
+        font-size: 36px;
+    }
+
+    .glossary-intro-subtitle {
+        font-size: 22px;
+    }
+
+    .hamburger {
+        top: 20px;
+        left: 15px;
+    }
 }
