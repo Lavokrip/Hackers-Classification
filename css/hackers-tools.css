@@ -14,6 +14,7 @@ body {
 
 main {
     width: 1240px;
+    max-width: calc(100% - 40px);
     margin: 0 auto;
 }
 
@@ -424,4 +425,135 @@ a {
 .tools-conclusion-section-image {
     width: 610px;
     height: 400px;
+}
+
+/* ========================= */
+/* ADAPTIVE */
+/* ========================= */
+
+@media (max-width: 1280px) {
+
+    .tools-intro-title,
+    .tools-intro-section-text,
+    .tools-intro-section-description {
+        max-width: 100%;
+    }
+
+    .tools-intro-section-image,
+    .os-section-image,
+    .scanner-section-image,
+    .framework-section-image,
+    .password-tools-section-image,
+    .social-tools-section-image,
+    .hardware-section-image,
+    .tools-conclusion-section-image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .tools-intro-title {
+        font-size: 72px;
+    }
+
+    .os-section-content,
+    .scanner-section-content,
+    .framework-section-content,
+    .password-tools-section-content,
+    .social-tools-section-content,
+    .hardware-section-content,
+    .tools-conclusion-section-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .os-section-left,
+    .scanner-section-left,
+    .framework-section-left,
+    .password-tools-section-right,
+    .social-tools-section-right,
+    .hardware-section-right,
+    .tools-conclusion-section-left {
+        width: 100%;
+    }
+
+    .tools-intro-section {
+        margin-bottom: 100px;
+    }
+
+    .os-section,
+    .scanner-section,
+    .framework-section,
+    .password-tools-section,
+    .social-tools-section,
+    .hardware-section {
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    .tools-intro-title {
+        margin-top: 100px;
+        margin-bottom: 80px;
+        font-size: 48px;
+        line-height: 1.1;
+    }
+
+    .os-section-title,
+    .scanner-section-title,
+    .framework-section-title,
+    .password-tools-section-title,
+    .social-tools-section-title,
+    .hardware-section-title {
+        font-size: 28px;
+    }
+
+    .tools-conclusion-section-title {
+        font-size: 28px;
+    }
+
+    .tools-intro-section {
+        margin-bottom: 80px;
+    }
+
+    .tools-conclusion-section {
+        margin-bottom: 120px;
+    }
+
+    .nav-panel {
+        width: 260px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    main {
+        max-width: calc(100% - 24px);
+    }
+
+    .tools-intro-title {
+        font-size: 36px;
+    }
+
+    .os-section-title,
+    .scanner-section-title,
+    .framework-section-title,
+    .password-tools-section-title,
+    .social-tools-section-title,
+    .hardware-section-title,
+    .tools-conclusion-section-title {
+        font-size: 24px;
+    }
+
+    .hamburger {
+        top: 20px;
+        left: 15px;
+    }
 }
