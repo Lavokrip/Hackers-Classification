@@ -13,6 +13,7 @@ body {
 
 main {
     width: 1240px;
+    max-width: calc(100% - 40px);
     margin: 0 auto;
 }
 
@@ -198,6 +199,7 @@ a {
 
 .career-intro-section-text {
     width: 715px;
+    max-width: 100%;
 }
 
 /* career-step-one-section */
@@ -370,10 +372,146 @@ a {
 
 .career-conclusion-section-text {
     width: 1030px;
+    max-width: 100%;
     margin-bottom: 40px;
 }
 
 .career-conclusion-section-image {
     height: 500px;
     object-fit: cover;
+}
+
+/* ========================= */
+/* ADAPTIVE */
+/* ========================= */
+
+@media (max-width: 1280px) {
+
+    .career-intro-section-text,
+    .career-conclusion-section-text {
+        width: 100%;
+    }
+
+    .career-intro-section-image,
+    .career-step-one-section-image,
+    .career-step-two-section-image,
+    .career-step-three-section-image,
+    .career-professions-section-image,
+    .career-conclusion-section-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .career-professions-section-subtitle {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .career-intro-title {
+        font-size: 72px;
+    }
+
+    .career-intro-subtitle {
+        font-size: 36px;
+    }
+
+    .career-step-one-section-content,
+    .career-step-two-section-content,
+    .career-step-three-section-content,
+    .career-professions-section-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .career-step-one-section-left,
+    .career-step-two-section-right,
+    .career-step-three-section-left,
+    .career-professions-section-left {
+        width: 100%;
+    }
+
+    .career-intro-section {
+        margin-bottom: 100px;
+    }
+
+    .career-professions-section {
+        margin-bottom: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    .career-intro-title {
+        margin-top: 100px;
+        font-size: 48px;
+        line-height: 1.1;
+    }
+
+    .career-intro-subtitle {
+        margin-bottom: 80px;
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .career-step-one-section-title,
+    .career-step-two-section-title,
+    .career-step-three-section-title {
+        font-size: 24px;
+    }
+
+    .career-step-one-section-subtitle,
+    .career-step-two-section-subtitle,
+    .career-step-three-section-subtitle,
+    .career-professions-section-title {
+        font-size: 28px;
+    }
+
+    .career-professions-section-subtitle {
+        font-size: 22px;
+    }
+
+    .career-conclusion-section {
+        margin-bottom: 120px;
+    }
+
+    .nav-panel {
+        width: 260px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    main {
+        max-width: calc(100% - 24px);
+    }
+
+    .career-intro-title {
+        font-size: 36px;
+    }
+
+    .career-intro-subtitle {
+        font-size: 22px;
+    }
+
+    .career-step-one-section-subtitle,
+    .career-step-two-section-subtitle,
+    .career-step-three-section-subtitle,
+    .career-professions-section-title {
+        font-size: 24px;
+    }
+
+    .career-professions-section-subtitle {
+        font-size: 20px;
+    }
+
+    .hamburger {
+        top: 20px;
+        left: 15px;
+    }
 }
