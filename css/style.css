@@ -13,6 +13,7 @@ body {
 
 main {
   width: 1240px;
+  max-width: calc(100% - 40px);
   margin: 0 auto;
 }
 
@@ -612,4 +613,173 @@ a {
   line-height: 1;
   font-variant: small-caps;
   border: 3px solid #ffffff;
+}
+
+/* ========================= */
+/* ADAPTIVE */
+/* ========================= */
+
+@media (max-width: 1280px) {
+
+  main,
+  .hackers-section-container,
+  .importance-section-container,
+  .types-section-container,
+  .structure-section-container,
+  .final-section-container {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+  }
+
+  .about-site-section {
+    width: calc(100% - 40px);
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .hackers-section-image,
+  .importance-section-image,
+  .types-section-white-image,
+  .types-section-grey-image,
+  .types-section-black-image,
+  .structure-section-image,
+  .final-section-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .main-header-title {
+    font-size: 100px;
+  }
+
+  .hackers-section-top,
+  .importance-section-content,
+  .structure-section-content,
+  .final-section-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hackers-section-image,
+  .hackers-section-text-block,
+  .importance-section-left,
+  .importance-section-right,
+  .structure-section-left,
+  .structure-section-right,
+  .final-section-left,
+  .final-section-right {
+    width: 100%;
+  }
+
+  .types-section-white,
+  .types-section-grey,
+  .types-section-black {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .types-section-white-left,
+  .types-section-grey-right,
+  .types-section-black-left {
+    width: 100%;
+  }
+
+  .types-section-white-image,
+  .types-section-grey-image,
+  .types-section-black-image {
+    width: 100%;
+  }
+
+  .hackers-section-bottom {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .hackers-section-bottom-text {
+    width: 100%;
+  }
+
+  .about-site-section-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  body {
+    font-size: 18px;
+  }
+
+  .main-header-background {
+    min-height: 100vh;
+  }
+
+  .main-header-content {
+    padding-top: 120px;
+  }
+
+  .main-header-title {
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .main-header-arrow {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 50px;
+  }
+
+  .hackers-section,
+  .importance-section,
+  .about-site-section,
+  .types-section,
+  .structure-section {
+    padding-top: 80px;
+  }
+
+  .final-section {
+    margin-top: 80px;
+    padding-bottom: 100px;
+  }
+
+  .hackers-section-title,
+  .importance-section-title,
+  .types-section-title,
+  .structure-section-title,
+  .about-site-section-title {
+    font-size: 28px;
+  }
+
+  .importance-section-left-text,
+  .final-section-right-text {
+    font-size: 24px;
+  }
+
+  .hackers-section-middle-text {
+    font-size: 28px;
+  }
+
+  .about-site-section-content {
+    gap: 0;
+  }
+
+  .nav-panel {
+    width: 260px;
+  }
+
+  .final-section-button {
+    width: 100%;
+    padding: 20px;
+    font-size: 28px;
+    text-align: center;
+  }
 }
