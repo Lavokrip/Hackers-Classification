@@ -13,6 +13,7 @@ body {
 
 main {
     width: 1240px;
+    max-width: calc(100% - 40px);
     margin: 0 auto;
 }
 
@@ -182,8 +183,8 @@ a {
 .types-intro-section-text {      
     margin: 0;
     width: 820px;
+    max-width: 100%;
     font-size: 24px;
-    line-height: 1.2;
 }
 
 .types-intro-section-image {
@@ -559,4 +560,168 @@ a {
 .chart-section-legend-text {
   margin: 0;
   font-size: 20px;
+}
+
+/* ========================= */
+/* ADAPTIVE */
+/* ========================= */
+
+@media (max-width: 1280px) {
+
+    .types-intro-section-text,
+    .ethical-section-text,
+    .criminal-section-text,
+    .hacktivists-section-text,
+    .scriptkiddie-section-text,
+    .government-section-text {
+        width: 100%;
+    }
+
+    .ethical-section-image,
+    .criminal-section-image,
+    .hacktivists-section-image,
+    .scriptkiddie-section-image,
+    .government-section-image,
+    .conclusion-types-section-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .chart-section-canvas-block {
+        width: 100%;
+        max-width: 620px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .types-intro-title {
+        font-size: 72px;
+    }
+
+    .types-intro-section-text {
+        width: 100%;
+    }
+
+    .ethical-section-content,
+    .criminal-section-content,
+    .hacktivists-section-content,
+    .scriptkiddie-section-content,
+    .government-section-content,
+    .conclusion-types-section-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .ethical-section-left,
+    .criminal-section-right,
+    .hacktivists-section-right,
+    .scriptkiddie-section-right,
+    .government-section-right,
+    .conclusion-types-section-left {
+        width: 100%;
+    }
+
+    .chart-section-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .chart-section-legend {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .ethical-section,
+    .comparison-section,
+    .conclusion-types-section,
+    .chart-section {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    .types-intro-title {
+        margin-top: 100px;
+        margin-bottom: 80px;
+        font-size: 48px;
+        line-height: 1.1;
+    }
+
+    .types-intro-section-text {
+        font-size: 20px;
+    }
+
+    .ethical-section-title,
+    .criminal-section-title,
+    .hacktivists-section-title,
+    .scriptkiddie-section-title,
+    .government-section-title,
+    .comparison-section-title,
+    .chart-section-title {
+        font-size: 28px;
+    }
+
+    .conclusion-types-section-title {
+        font-size: 28px;
+    }
+
+    .comparison-section-item {
+        font-size: 20px;
+    }
+
+    .comparison-section-item:nth-child(2),
+    .comparison-section-item:nth-child(3),
+    .comparison-section-item:nth-child(4) {
+        padding-left: 20px;
+    }
+
+    .chart-section {
+        margin-bottom: 120px;
+    }
+
+    .nav-panel {
+        width: 260px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    main {
+        max-width: calc(100% - 24px);
+    }
+
+    .types-intro-title {
+        font-size: 36px;
+    }
+
+    .ethical-section-title,
+    .criminal-section-title,
+    .hacktivists-section-title,
+    .scriptkiddie-section-title,
+    .government-section-title,
+    .comparison-section-title,
+    .chart-section-title,
+    .conclusion-types-section-title {
+        font-size: 24px;
+    }
+
+    .comparison-section-item {
+        font-size: 18px;
+    }
+
+    .chart-section-legend-text {
+        font-size: 18px;
+    }
+
+    .hamburger {
+        top: 20px;
+        left: 15px;
+    }
 }
