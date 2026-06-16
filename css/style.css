@@ -655,6 +655,7 @@ a {
 @media (max-width: 1024px) {
 
   .main-header-title {
+    width: calc(100% - 40px);
     font-size: 100px;
   }
 
