@@ -14,6 +14,7 @@ body {
 
 main {
     width: 1240px;
+    max-width: calc(100% - 40px);
     margin: 0 auto;
 }
 
@@ -197,6 +198,7 @@ a {
 
 .law-introduction-section-text-block {
     width: 715px;
+    max-width: 100%;
     margin-bottom: 40px;
 }
 
@@ -405,4 +407,146 @@ a {
     width: 610px;
     height: 400px;
     object-fit: cover;
+}
+
+/* ========================= */
+/* ADAPTIVE */
+/* ========================= */
+
+@media (max-width: 1280px) {
+
+    .law-introduction-section-text-block {
+        width: 100%;
+    }
+
+    .law-introduction-section-image,
+    .blackhat-law-section-image,
+    .whitehat-law-section-image,
+    .greyhat-law-section-image,
+    .law-conclusion-section-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .law-table-section-table {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .law-introduction-title {
+        font-size: 72px;
+    }
+
+    .law-introduction-section-subtitle {
+        font-size: 36px;
+    }
+
+    .blackhat-law-section-content,
+    .whitehat-law-section-content,
+    .greyhat-law-section-content,
+    .law-conclusion-section-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .blackhat-law-section-left,
+    .whitehat-law-section-left,
+    .greyhat-law-section-left,
+    .law-conclusion-section-left {
+        width: 100%;
+    }
+
+    .law-introduction-section {
+        margin-bottom: 100px;
+    }
+
+    .law-table-section {
+        margin-bottom: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    .law-introduction-title {
+        margin-top: 100px;
+        margin-bottom: 80px;
+        font-size: 48px;
+        line-height: 1.1;
+    }
+
+    .law-introduction-section-subtitle {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    .blackhat-law-section-title,
+    .whitehat-law-section-title,
+    .greyhat-law-section-title,
+    .law-table-section-title {
+        font-size: 28px;
+    }
+
+    .law-table-section-subtitle {
+        font-size: 24px;
+    }
+
+    .law-conclusion-section-title {
+        font-size: 28px;
+    }
+
+    .law-table-section-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .law-conclusion-section {
+        margin-bottom: 120px;
+    }
+
+    .nav-panel {
+        width: 260px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    main {
+        max-width: calc(100% - 24px);
+    }
+
+    .law-introduction-title {
+        font-size: 36px;
+    }
+
+    .law-introduction-section-subtitle {
+        font-size: 22px;
+    }
+
+    .blackhat-law-section-title,
+    .whitehat-law-section-title,
+    .greyhat-law-section-title,
+    .law-table-section-title,
+    .law-conclusion-section-title {
+        font-size: 24px;
+    }
+
+    .law-table-section-subtitle {
+        font-size: 20px;
+    }
+
+    .case {
+        font-size: 24px;
+    }
+
+    .hamburger {
+        top: 20px;
+        left: 15px;
+    }
 }
