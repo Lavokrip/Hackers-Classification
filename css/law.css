@@ -506,6 +506,11 @@ a {
         white-space: nowrap;
     }
 
+    .law-table-section-table th,
+    .law-table-section-table td {
+        max-width: 70px;
+    }
+
     .law-conclusion-section {
         margin-bottom: 120px;
     }
