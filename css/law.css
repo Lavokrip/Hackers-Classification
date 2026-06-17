@@ -476,7 +476,7 @@ a {
     .law-introduction-title {
         margin-top: 100px;
         margin-bottom: 80px;
-        font-size: 48px;
+        font-size: 46px;
         line-height: 1.1;
     }
 
@@ -503,12 +503,6 @@ a {
     .law-table-section-table {
         display: block;
         overflow-x: auto;
-        white-space: nowrap;
-    }
-
-    .law-table-section-table th,
-    .law-table-section-table td {
-        max-width: 70px;
     }
 
     .law-conclusion-section {
