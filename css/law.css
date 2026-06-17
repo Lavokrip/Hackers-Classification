@@ -319,6 +319,10 @@ a {
     margin-bottom: 10px;
 }
 
+.greyhat-law-section-text:first-child {
+    width: 609px;
+}
+
 .greyhat-law-section-image {
     width: 505px;
     height: 350px;
@@ -456,6 +460,10 @@ a {
     .greyhat-law-section-left,
     .law-conclusion-section-left {
         width: 100%;
+    }
+
+    .greyhat-law-section-text:first-child {
+        width: auto;
     }
 
     .law-introduction-section {
